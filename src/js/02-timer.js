@@ -46,7 +46,6 @@ function handleTimerStart(selectedDates) {
 
     const timeDifference = selectData - now;
     const { days, hours, minutes, seconds } = convertMs(timeDifference);
-    daysEl.textContent = days;
     daysEl.textContent = addLeadingZero(days);
     hoursEl.textContent = addLeadingZero(hours);
     minutesEl.textContent = addLeadingZero(minutes);
